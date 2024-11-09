@@ -68,9 +68,9 @@ const Services = () => {
     let tdee = bmr * activityMultiplier * exerciseMultiplier;
 
     if (formData.goal === 'gain') {
-      tdee *= 1.3; // Gain muscle: multiply by 1.3
+      tdee *= 1.1; // Gain muscle: multiply by 1.3
     } else if (formData.goal === 'lose') {
-      tdee *= 0.8; // Lose weight: multiply by 0.8
+      tdee *= 0.83; // Lose weight: multiply by 0.8
     }
 
     return tdee.toFixed(2);
