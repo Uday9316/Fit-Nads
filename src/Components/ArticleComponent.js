@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { articleData } from '../Data/Data'; // Import the article data from Data.js
-import logo from '../assets/logo-2.png'; // Import the logo image
+import logo from '../assets/chog.gif'; // Import the logo image
 import './ArticleComponent.css'; // Import the CSS file for styling
 
 // Custom Navbar for the article page
