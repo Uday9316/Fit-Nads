@@ -1,5 +1,7 @@
-import img6 from "../assets/sergen.png";
-import img7 from "../assets/uday.png";
+import img6 from "../assets/sergen.png"
+import img7 from "../assets/uday.png"
+
+
 
 export const navLinks = [
     { label: "Home", href: "#home" },
@@ -7,12 +9,14 @@ export const navLinks = [
     { label: "Fat-Cal", href: "#Fat" },
     { label: "Team", href: "#TeamMembers" },
     { label: "Article", href: "#Article" }
-];
 
-export const client = []; // Empty array, can be populated later
 
-export const teamMembers = [
-    {
+]
+
+
+export const client = []
+
+export const teamMembers = [{
         img: img6,
         role: "Fitness Expert",
         twitter: "https://x.com/Sergenbaba5", 
@@ -20,18 +24,21 @@ export const teamMembers = [
     },
     {
         img: img7,
-        role: "Fitness Expert", // Fixed the typo "Exeprt" -> "Expert"
+        role: "Fitness Exeprt",
         twitter: "https://x.com/uday_dhorajiya",  
         name: "Uday"
-    }
-];
+    },
+
+]
+// src/Data/Data.js
+// src/Data/Data.js
 
 export const articleData = {
     title: "What is a Supplement? The Best Supplements!",
     introduction: `
-        Achieving the body we want is the result of conscious training, quality nutrition, disciplined rest, and the right mentality; in short, a balanced life. A factor that disrupts the balance, no matter how small, will prevent us from reaching the results we want. The purpose of supplements is to reduce the obstacles on the way.
+        Achieving the body we want is the result of conscious training, quality nutrition, disciplined rest and the right mentality; in short, a balanced life. A factor that disrupts the balance, no matter how small, will prevent us from reaching the results we want. The purpose of supplements is to reduce the obstacles on the way.
 
-        Supplements are the last part of our nutrition in order of importance. First, we must establish our calories, macros such as protein, our fluid intake, what to eat, and when. In this case, supplements support us. Supplements can also cover the deficiencies at the bottom of the pyramid. However, supplements alone are not the whole pyramid!
+        Supplements are the last part of our nutrition in order of importance. First, we must establish our calories, macros such as protein, our fluid intake, what to eat and when. In this case, supplements support us. Supplements can also cover the deficiencies at the bottom of the pyramid. However, supplements alone are not the whole pyramid!
     `,
     misconceptions: [
         {
@@ -62,7 +69,7 @@ export const articleData = {
         {
             name: "ZMA (Zinc and Magnesium)",
             description: `
-                Zinc and magnesium are minerals that play a primary role in many activities of metabolism. Some of the problems that occur when they are deficient: low sexual desire, hair loss, white spots on nails, low testosterone, and acne. Supporting them with supplements naturally increases your testosterone and improves sleep quality. Indirectly, it helps your work in the gym and kitchen to be more effective.
+                Zinc and magnesium are minerals that play a primary role in many activities of metabolism. Some of the problems that occur when they are deficient: Low sexual desire, hair loss, white spots on nails, low testosterone, and acne. Supporting them with supplements naturally increases your testosterone and improves sleep quality. Indirectly, it helps your work in the gym and kitchen to be more effective.
             `
         },
         {
@@ -76,7 +83,7 @@ export const articleData = {
             description: `
                 Probiotics are essential for gut health. More than 200 studies say that more than 170 diseases are due to deficient probiotics. Irritable bowel (IBS), weak immune system, inflammations, eczema, skin problems, bad breath, diarrhea or constipation—probiotics help us overcome these problems.
 
-                A good probiotic supplement should contain a variety of bacteria strains, such as Lactobacillus rhamnosus and Lactobacillus acidophilus. These active bacteria help restore balance to your gut microbiome.
+                A good probiotic supplement should contain a variety of bacteria strains, such as Lactobacillus rhamnosus and Lactobacillus acidophilus. These active bacteria help restore balance to your gut microbiome. 
             `
         },
         {
@@ -93,9 +100,45 @@ export const articleData = {
                 Protein powder is useful for those who struggle to meet their daily protein needs through whole foods. It is essential during a diet phase when calories are restricted. But if you can meet your protein needs through your diet, protein powder is optional.
             `
         }
-    ]
+    ],
+    fitnessNutritionGuide: {
+        title: "Fitness Nutrition Guide: Everything About Athlete Nutrition",
+        intro: `
+            If you are new to sports, “I have too much fat” or “I am too thin, where should I start?” this guide is for you!
+            Experienced athletes: we make your life easier! You will save yourself from a huge loss of time, money, and enthusiasm!
+        `,
+        sections: [
+            {
+                title: "Athlete Nutrition: Nutrition Pyramid",
+                content: `
+                    Calories: The energy unit of nutrients. We all have a certain amount of energy we need according to our body size and activity level. We need to calculate this and pay attention to calories while creating an athlete diet.
+
+                    Macros: They are the building blocks of the nutrients we eat. We will examine carbohydrates, proteins, and fats here. We should learn their ratios, how much we need to take according to our purpose.
+
+                    Micros: They are organic or inorganic components that we take with food but usually express in milligrams or smaller units. We should understand vitamins and minerals and our water needs.
+
+                    Nutrition timing: We will examine how many meals we need to eat, and how to eat before and after sports.
+
+                    Finally, supplements are foods that will support the nutrition program in order to complete the deficiencies and increase performance.
+                `
+            },
+            {
+                title: "What You Need to Know About Muscle Building and Fat Burning",
+                content: `
+                    To build muscle or burn fat requires patience. It is crucial to understand that muscle and fat are different tissues, and you cannot easily gain or lose either. Your nutrition program should be adjusted based on this understanding.
+                `
+            }
+        ]
+    },
+    summary: `
+        To succeed in fitness, it's important to follow a nutrition program tailored to your needs, whether you are building muscle or burning fat. Track your calories, macros, and supplements while prioritizing whole, minimally processed foods. Regularly assess your progress and adjust your plan as needed.
+    `
 };
 
-export const blog = []; // Empty array, can be populated later
+export const blog = [
+]
 
-export const footer = []; // Empty array, can be populated later
+export const footer = [
+
+
+]
