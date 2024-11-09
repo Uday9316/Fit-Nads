@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Import useState from React
 import { Link } from 'react-router-dom';
-import logo from "../assets/logo-2.png";
+import logo from "../assets/chog.gif";
 import { navLinks } from '../Data/Data';
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
