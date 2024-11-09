@@ -1,0 +1,104 @@
+/* src/Components/ArticleComponent.css */
+
+/* Custom Navbar for Article Page */
+.article-navbar {
+    background-color: black;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .article-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .article-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .article-logo-text {
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .article-navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .article-navbar-links li {
+    font-size: 1.1rem;
+  }
+  
+  .article-navbar-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .article-navbar-links a:hover {
+    color: red;
+  }
+  
+  /* Article Page Content Styling */
+  .article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .article-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .article-introduction {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Misconceptions Styling */
+  .misconception {
+    margin-bottom: 20px;
+  }
+  
+  .misconception h2 {
+    font-size: 1.5em;
+  }
+  
+  .supplements-title {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .supplements-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .supplement-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Summary Section Styling */
+  .article-summary {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 1.2em;
+  }
+  

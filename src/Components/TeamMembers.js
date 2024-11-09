@@ -8,7 +8,7 @@ import {BsInstagram} from "react-icons/bs"
 
 const TeamMembers = () => {
   return (
-    <section className=' w-full min-h-screen'>
+    <section id="TeamMembers" className=' w-full min-h-screen'>
       <div className=' max-container padding-hero-y padding-x'>
         <div  className='flex justify-between items-end mb-28 max-md:flex-col max-md:items-start max-md:gap-5 max-md:mb-20'>
           <div>
@@ -20,10 +20,7 @@ const TeamMembers = () => {
           </div>
 
           <div>
-            <button className=' py-4 px-9 text-xl group relative text-white bg-[orangered] rounded-sm'>
-              <div className=' buttonDiv'></div>
-              <span className='buttonSpan'>MORE SERVICES</span>
-            </button>
+         
           </div>
         </div>
 
@@ -37,10 +34,10 @@ const TeamMembers = () => {
                   <h1 className='font text-xl font-semibold text-white'>{val.name}</h1>
 
                   <div className=' flex items-center gap-6 text-lg mt-[27px] text-white'>
-                    <BiLogoFacebook />
+                      {/* Twitter Link */}
+                  <a href={val.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-[#1DA1F2]">
                     <BsTwitter />
-                    <FaGlobe />
-                    <BsInstagram />
+                  </a>
                   </div>
                 </div>
               </div>
