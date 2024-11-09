@@ -1,6 +1,6 @@
 import React from 'react'
 import { footer } from '../Data/Data'
-import logo from "../assets/logo-2.png"
+import logo from "../assets/chog.gif"
 
 import {BsTwitter} from "react-icons/bs"
 import {BsInstagram} from "react-icons/bs"
