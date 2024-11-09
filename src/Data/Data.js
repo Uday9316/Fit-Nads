@@ -107,32 +107,7 @@ export const articleData = {
             If you are new to sports, “I have too much fat” or “I am too thin, where should I start?” this guide is for you!
             Experienced athletes: we make your life easier! You will save yourself from a huge loss of time, money, and enthusiasm!
         `,
-        sections: [
-            {
-                title: "Athlete Nutrition: Nutrition Pyramid",
-                content: `
-                    Calories: The energy unit of nutrients. We all have a certain amount of energy we need according to our body size and activity level. We need to calculate this and pay attention to calories while creating an athlete diet.
 
-                    Macros: They are the building blocks of the nutrients we eat. We will examine carbohydrates, proteins, and fats here. We should learn their ratios, how much we need to take according to our purpose.
-
-                    Micros: They are organic or inorganic components that we take with food but usually express in milligrams or smaller units. We should understand vitamins and minerals and our water needs.
-
-                    Nutrition timing: We will examine how many meals we need to eat, and how to eat before and after sports.
-
-                    Finally, supplements are foods that will support the nutrition program in order to complete the deficiencies and increase performance.
-                `
-            },
-            {
-                title: "What You Need to Know About Muscle Building and Fat Burning",
-                content: `
-                    To build muscle or burn fat requires patience. It is crucial to understand that muscle and fat are different tissues, and you cannot easily gain or lose either. Your nutrition program should be adjusted based on this understanding.
-                `
-            }
-        ]
-    },
-    summary: `
-        To succeed in fitness, it's important to follow a nutrition program tailored to your needs, whether you are building muscle or burning fat. Track your calories, macros, and supplements while prioritizing whole, minimally processed foods. Regularly assess your progress and adjust your plan as needed.
-    `
 };
 
 export const blog = [
