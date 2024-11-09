@@ -32,7 +32,6 @@ export const teamMembers = [{
 ]
 // src/Data/Data.js
 // src/Data/Data.js
-
 export const articleData = {
     title: "What is a Supplement? The Best Supplements!",
     introduction: `
@@ -100,15 +99,9 @@ export const articleData = {
                 Protein powder is useful for those who struggle to meet their daily protein needs through whole foods. It is essential during a diet phase when calories are restricted. But if you can meet your protein needs through your diet, protein powder is optional.
             `
         }
-    ],
-    fitnessNutritionGuide: {
-        title: "Fitness Nutrition Guide: Everything About Athlete Nutrition",
-        intro: `
-            If you are new to sports, “I have too much fat” or “I am too thin, where should I start?” this guide is for you!
-            Experienced athletes: we make your life easier! You will save yourself from a huge loss of time, money, and enthusiasm!
-        `,
-
+    ] // Remove the trailing comma here
 };
+
 
 export const blog = [
 ]
