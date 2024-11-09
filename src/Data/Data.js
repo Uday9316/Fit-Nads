@@ -1,7 +1,5 @@
-import img6 from "../assets/sergen.png"
-import img7 from "../assets/uday.png"
-
-
+import img6 from "../assets/sergen.png";
+import img7 from "../assets/uday.png";
 
 export const navLinks = [
     { label: "Home", href: "#home" },
@@ -9,14 +7,12 @@ export const navLinks = [
     { label: "Fat-Cal", href: "#Fat" },
     { label: "Team", href: "#TeamMembers" },
     { label: "Article", href: "#Article" }
+];
 
+export const client = []; // Empty array, can be populated later
 
-]
-
-
-export const client = []
-
-export const teamMembers = [{
+export const teamMembers = [
+    {
         img: img6,
         role: "Fitness Expert",
         twitter: "https://x.com/Sergenbaba5", 
@@ -24,20 +20,18 @@ export const teamMembers = [{
     },
     {
         img: img7,
-        role: "Fitness Exeprt",
+        role: "Fitness Expert", // Fixed the typo "Exeprt" -> "Expert"
         twitter: "https://x.com/uday_dhorajiya",  
         name: "Uday"
-    },
+    }
+];
 
-]
-// src/Data/Data.js
-// src/Data/Data.js
 export const articleData = {
     title: "What is a Supplement? The Best Supplements!",
     introduction: `
-        Achieving the body we want is the result of conscious training, quality nutrition, disciplined rest and the right mentality; in short, a balanced life. A factor that disrupts the balance, no matter how small, will prevent us from reaching the results we want. The purpose of supplements is to reduce the obstacles on the way.
+        Achieving the body we want is the result of conscious training, quality nutrition, disciplined rest, and the right mentality; in short, a balanced life. A factor that disrupts the balance, no matter how small, will prevent us from reaching the results we want. The purpose of supplements is to reduce the obstacles on the way.
 
-        Supplements are the last part of our nutrition in order of importance. First, we must establish our calories, macros such as protein, our fluid intake, what to eat and when. In this case, supplements support us. Supplements can also cover the deficiencies at the bottom of the pyramid. However, supplements alone are not the whole pyramid!
+        Supplements are the last part of our nutrition in order of importance. First, we must establish our calories, macros such as protein, our fluid intake, what to eat, and when. In this case, supplements support us. Supplements can also cover the deficiencies at the bottom of the pyramid. However, supplements alone are not the whole pyramid!
     `,
     misconceptions: [
         {
@@ -68,7 +62,7 @@ export const articleData = {
         {
             name: "ZMA (Zinc and Magnesium)",
             description: `
-                Zinc and magnesium are minerals that play a primary role in many activities of metabolism. Some of the problems that occur when they are deficient: Low sexual desire, hair loss, white spots on nails, low testosterone, and acne. Supporting them with supplements naturally increases your testosterone and improves sleep quality. Indirectly, it helps your work in the gym and kitchen to be more effective.
+                Zinc and magnesium are minerals that play a primary role in many activities of metabolism. Some of the problems that occur when they are deficient: low sexual desire, hair loss, white spots on nails, low testosterone, and acne. Supporting them with supplements naturally increases your testosterone and improves sleep quality. Indirectly, it helps your work in the gym and kitchen to be more effective.
             `
         },
         {
@@ -82,7 +76,7 @@ export const articleData = {
             description: `
                 Probiotics are essential for gut health. More than 200 studies say that more than 170 diseases are due to deficient probiotics. Irritable bowel (IBS), weak immune system, inflammations, eczema, skin problems, bad breath, diarrhea or constipation—probiotics help us overcome these problems.
 
-                A good probiotic supplement should contain a variety of bacteria strains, such as Lactobacillus rhamnosus and Lactobacillus acidophilus. These active bacteria help restore balance to your gut microbiome. 
+                A good probiotic supplement should contain a variety of bacteria strains, such as Lactobacillus rhamnosus and Lactobacillus acidophilus. These active bacteria help restore balance to your gut microbiome.
             `
         },
         {
@@ -99,14 +93,9 @@ export const articleData = {
                 Protein powder is useful for those who struggle to meet their daily protein needs through whole foods. It is essential during a diet phase when calories are restricted. But if you can meet your protein needs through your diet, protein powder is optional.
             `
         }
-    ] // Remove the trailing comma here
+    ]
 };
 
+export const blog = []; // Empty array, can be populated later
 
-export const blog = [
-]
-
-export const footer = [
-
-
-]
+export const footer = []; // Empty array, can be populated later
