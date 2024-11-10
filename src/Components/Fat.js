@@ -138,10 +138,10 @@ const Services = () => {
                 name="calculationType"
                 value={formData.calculationType}
                 onChange={handleInputChange}
-                className="block border rounded p-2"
+                className="block border rounded p-2.5"
               >
                 <option value="bfp">Body Fat Percentage (BFP)</option>
-                <option value="bmr">Basic Calorie Requirement / Basal Metabolic Rate (BMR) </option>
+                <option value="bmr">Basal Metabolic Rate (BMR)</option>
               </select>
             </div>
 
@@ -152,7 +152,7 @@ const Services = () => {
                 name="gender"
                 value={formData.gender}
                 onChange={handleInputChange}
-                className="block border rounded p-2"
+                className="block border rounded w-1/4 p-2"
               >
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -168,7 +168,7 @@ const Services = () => {
                 value={formData.weight}
                 onChange={handleInputChange}
                 required
-                className="block border rounded p-2"
+                className="block border rounded w-1/4 p-2 text-base"
                 min="10"
                 max="300"
               />
@@ -184,7 +184,7 @@ const Services = () => {
                   value={formData.waist}
                   onChange={handleInputChange}
                   required
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2 text-base"
                   min="30"
                   max="150"
                 />
@@ -201,7 +201,7 @@ const Services = () => {
                   value={formData.hips}
                   onChange={handleInputChange}
                   required
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2 text-base"
                   min="50"
                   max="150"
                 />
@@ -218,7 +218,7 @@ const Services = () => {
                   value={formData.neck}
                   onChange={handleInputChange}
                   required
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2 text-base"
                   min="25"
                   max="60"
                 />
@@ -235,7 +235,7 @@ const Services = () => {
                   value={formData.height}
                   onChange={handleInputChange}
                   required
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2 text-base"
                   min="50"
                   max="300"
                 />
@@ -252,7 +252,7 @@ const Services = () => {
                   value={formData.age}
                   onChange={handleInputChange}
                   required
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2 text-base"
                   min="1"
                   max="120"
                 />
