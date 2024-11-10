@@ -267,7 +267,7 @@ const Services = () => {
                   name="activityLevel"
                   value={formData.activityLevel}
                   onChange={handleInputChange}
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2"
                 >
                   <option value="1.1">Lightly Active</option>
                   <option value="1.25">Moderately Active</option>
@@ -285,7 +285,7 @@ const Services = () => {
                   name="exerciseFrequency"
                   value={formData.exerciseFrequency}
                   onChange={handleInputChange}
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2"
                 >
                   <option value="0">0 times a week</option>
                   <option value="1">1-3 times a week</option>
@@ -303,7 +303,7 @@ const Services = () => {
                   name="goal"
                   value={formData.goal}
                   onChange={handleInputChange}
-                  className="block border rounded p-2"
+                  className="block border rounded w-1/4 p-2"
                 >
                   <option value="maintain">Maintain Weight</option>
                   <option value="gain">Gain Muscle</option>
