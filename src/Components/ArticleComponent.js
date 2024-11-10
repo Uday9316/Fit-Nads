@@ -26,6 +26,10 @@ const ArticleNav = () => {
 };
 
 const ArticleComponent = () => {
+  // Check if articleData is defined and has the expected structure
+  const title = articleData?.title || "Default Title"; // Fallback title
+  const introduction = articleData?.introduction || "Default introduction."; // Fallback introduction
+
   return (
     <div>
       {/* Render the custom navbar for the article page */}
@@ -33,13 +37,13 @@ const ArticleComponent = () => {
 
       {/* Article Content */}
       <div className="article-container">
-        <h1 className="article-title">{articleData.title}</h1>
+        <h1 className="article-title">{title}</h1>
 
         <div className="article-introduction">
-          <p>{articleData.introduction}</p>
+          <p>{introduction}</p>
         </div>
 
-        {articleData.misconceptions.map((misconception, index) => (
+        {articleData?.misconceptions?.map((misconception, index) => (
           <div key={index} className="misconception">
             <h2>{misconception.title}</h2>
             <p>{misconception.content}</p>
@@ -48,17 +52,15 @@ const ArticleComponent = () => {
 
         <h2 className="supplements-title">The Best Supplements!</h2>
         <ul className="supplements-list">
-          {articleData.bestSupplements.map((supplement, index) => (
+          {articleData?.bestSupplements?.map((supplement, index) => (
             <li key={index} className="supplement-item">
               <strong>{supplement.name}:</strong> {supplement.description}
             </li>
           ))}
         </ul>
 
-        <h2 className="guide-title">{articleData.fitnessNutritionGuide.title}</h2>
-        <p>{articleData.fitnessNutritionGuide.intro}</p>
-
-        {articleData.fitnessNutritionGuide.sections.map((section, index) => (
+    
+        {articleData?.fitnessNutritionGuide?.sections?.map((section, index) => (
           <div key={index} className="guide-section">
             <h3>{section.title}</h3>
             <p>{section.content}</p>
@@ -67,7 +69,7 @@ const ArticleComponent = () => {
 
         <div className="article-summary">
           <h3>Summary:</h3>
-          <p>{articleData.summary}</p>
+          <p>{articleData?.summary || "Default summary."}</p>
         </div>
       </div>
     </div>
