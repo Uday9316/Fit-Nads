@@ -24,7 +24,7 @@ export const teamMembers = [{
     },
     {
         img: img7,
-        role: "Fitness Exeprt",
+        role: "Fitness Expert",
         twitter: "https://x.com/uday_dhorajiya",  
         name: "Uday"
     },
