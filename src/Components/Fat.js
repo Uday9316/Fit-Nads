@@ -119,7 +119,7 @@ const Services = () => {
       <div className="max-container padding-hero-y padding-x bg-white bg-opacity-80 rounded-lg shadow-lg p-8">
         <div className="flex justify-between items-end mb-28 max-lg:flex-col max-lg:items-start max-lg:gap-5 max-sm:mb-20">
           <div>
-            <p className="text-[#f04e3c] relative before:absolute before:w-20 before:h-1 before:bg-[#f04e3c] before:top-[50%] before:left-0 pl-24 text-2xl before:translate-y-[-50%]">
+            <p className="text-[#f04e3c] relative before:absolute before:w-20 before:h-1 before:bg-[#f04e3c] before:top-[50%] before:left-0 pl-24 text-2xl before:translate-y-[-50%] max-sm:text-xl max-sm:before:w-14 max-sm:pl-20">
               CALCULATOR
             </p>
             <div className="text-6xl text-gray-800 mt-8 leading-[60px] max-w-[65%] font-semibold max-xl:text-4xl max-lg:text-5xl max-lg:leading-[60px] max-lg:max-w-[100%] max-sm:text-3xl">
@@ -133,7 +133,7 @@ const Services = () => {
           <form onSubmit={handleSubmit} className="space-y-4 w-1/2">
             {/* Select Calculation Type */}
             <div>
-              <label className="text-gray-800 flex items-center"><FaCalculator className="mr-2"/>Choose Calculation:</label>
+              <label className="text-gray-800 flex items-center text-lg font-semibold"><FaCalculator className="mr-2"/>Choose Calculation:</label>
               <select
                 name="calculationType"
                 value={formData.calculationType}
@@ -147,7 +147,7 @@ const Services = () => {
 
             {/* Gender Input */}
             <div>
-              <label className="text-gray-800 flex items-center"><FaUser className="mr-2"/>Gender:</label>
+              <label className="text-gray-800 flex items-center text-lg font-semibold"><FaUser className="mr-2"/>Gender:</label>
               <select
                 name="gender"
                 value={formData.gender}
@@ -161,7 +161,7 @@ const Services = () => {
 
             {/* Weight Input */}
             <div>
-              <label className="text-gray-800 flex items-center"><FaWeight className="mr-2"/>Weight (kg):</label>
+              <label className="text-gray-800 flex items-center text-lg font-semibold"><FaWeight className="mr-2"/>Weight (kg):</label>
               <input
                 type="number"
                 name="weight"
@@ -177,7 +177,7 @@ const Services = () => {
             {/* Waist Input - Only for BFP calculation */}
             {formData.calculationType === 'bfp' && (
               <div>
-                <label className="text-gray-800 flex items-center"><FaRuler className="mr-2"/>Waist (cm):</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold"><FaRuler className="mr-2"/>Waist (cm):</label>
                 <input
                   type="number"
                   name="waist"
@@ -194,7 +194,7 @@ const Services = () => {
             {/* Hips Input - Only for BFP calculation */}
             {formData.gender === 'female' && formData.calculationType === 'bfp' && (
               <div>
-                <label className="text-gray-800 flex items-center"><FaRuler className="mr-2"/>Hips (cm):</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold"><FaRuler className="mr-2"/>Hips (cm):</label>
                 <input
                   type="number"
                   name="hips"
@@ -211,7 +211,7 @@ const Services = () => {
             {/* Neck Input - Only for BFP calculation */}
             {formData.calculationType === 'bfp' && (
               <div>
-                <label className="text-gray-800 flex items-center"><FaRuler className="mr-2"/>Neck (cm):</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold"><FaRuler className="mr-2"/>Neck (cm):</label>
                 <input
                   type="number"
                   name="neck"
@@ -228,7 +228,7 @@ const Services = () => {
             {/* Height Input */}
             {(formData.calculationType === 'bfp' || formData.calculationType === 'bmr') && (
               <div>
-                <label className="text-gray-800 flex items-center"><FaRuler className="mr-2"/>Height (cm):</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold"><FaRuler className="mr-2"/>Height (cm):</label>
                 <input
                   type="number"
                   name="height"
@@ -245,7 +245,7 @@ const Services = () => {
             {/* Age Input - Show only for BMR calculation */}
             {formData.calculationType === 'bmr' && (
               <div>
-                <label className="text-gray-800 flex items-center">Age (years):</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold">Age (years):</label>
                 <input
                   type="number"
                   name="age"
@@ -262,7 +262,7 @@ const Services = () => {
             {/* Activity Level Input */}
             {formData.calculationType === 'bmr' && (
               <div>
-                <label className="text-gray-800 flex items-center">Activity Level:</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold">Activity Level:</label>
                 <select
                   name="activityLevel"
                   value={formData.activityLevel}
@@ -280,7 +280,7 @@ const Services = () => {
             {/* Exercise Frequency Input */}
             {formData.calculationType === 'bmr' && (
               <div>
-                <label className="text-gray-800 flex items-center">Exercise Frequency:</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold">Exercise Frequency:</label>
                 <select
                   name="exerciseFrequency"
                   value={formData.exerciseFrequency}
@@ -298,7 +298,7 @@ const Services = () => {
             {/* Goal Input: Gain Muscle or Lose Weight */}
             {formData.calculationType === 'bmr' && (
               <div>
-                <label className="text-gray-800 flex items-center">Goal:</label>
+                <label className="text-gray-800 flex items-center text-lg font-semibold">Goal:</label>
                 <select
                   name="goal"
                   value={formData.goal}
@@ -315,7 +315,7 @@ const Services = () => {
             <div className="mt-4 text-center">
               <button
                 type="submit"
-                className="bg-blue-600 text-white py-2 px-6 rounded"
+                className="bg-blue-600 text-white py-2 px-6 rounded text-lg hover:bg-blue-700 transition duration-300"
               >
                 Calculate
               </button>
@@ -327,34 +327,32 @@ const Services = () => {
             <div className="w-1/2 text-white bg-gray-800 p-4 rounded-lg shadow-md">
               {formData.calculationType === 'bfp' ? (
                 <>
-                  <p>Body Fat Percentage: {result.bfp}%</p>
-                  <p className="mt-2">
+                  <p className="text-2xl font-bold">Body Fat Percentage: {result.bfp}%</p>
+                  <p className="mt-2 text-lg">
                     Your Body Fat Percentage (BFP) indicates the proportion of fat in your body compared to your total weight. 
                     A lower percentage generally means better fitness and health. For example, a BFP of 15% is considered healthy for men, while 25% is healthy for women.
                   </p>
                 </>
               ) : (
                 <>
-                  <p>BMR: {result.bmr} kcal/day</p>
-                  <p className="mt-2">
+                  <p className="text-2xl font-bold">BMR: {result.bmr} kcal/day</p>
+                  <p className="mt-2 text-lg">
                     Your Basal Metabolic Rate (BMR) is the number of calories your body needs to maintain basic physiological functions at rest, such as breathing and digestion. 
                     This is the minimum energy requirement for your body to function properly.
                   </p>
-                  <p>TDEE: {result.tdee} kcal/day</p>
-                  <p className="mt-2">
+                  <p className="text-2xl font-bold">TDEE: {result.tdee} kcal/day</p>
+                  <p className="mt-2 text-lg">
                     Your Total Daily Energy Expenditure (TDEE) is the total number of calories you burn in a day, including all activities. 
                     This number helps you understand how many calories you need to maintain, lose, or gain weight based on your activity level and goals.
                   </p>
                 </>
               )}
               {/* Image Below Results */}
-          <div className="w-3/4 mt-20">
-            <img src={mikeImage} alt="Mike" className="w-full h-auto rounded-lg shadow-lg" />
-          </div>
+              <div className="w-3/4 mt-20">
+                <img src={mikeImage} alt="Mike" className="w-full h-auto rounded-lg shadow-lg" />
+              </div>
             </div>
           )}
-
-          
         </div>
       </div>
     </section>
