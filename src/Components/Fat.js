@@ -141,7 +141,7 @@ const Services = () => {
                 className="block border rounded p-2"
               >
                 <option value="bfp">Body Fat Percentage (BFP)</option>
-                <option value="bmr">Basal Metabolic Rate (BMR)</option>
+                <option value="bmr">Basal Metabolic Rate (BMR) / Basic Calorie Requirement /</option>
               </select>
             </div>
 
