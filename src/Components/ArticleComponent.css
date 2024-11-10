@@ -1,104 +1,217 @@
 /* src/Components/ArticleComponent.css */
 
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    line-height: 1.6; /* Improve line height for readability */
+    color: #333; /* Default text color */
+}
+
 /* Custom Navbar for Article Page */
 .article-navbar {
-    background-color: black;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .article-navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .article-logo {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .article-logo-text {
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
-  }
-  
-  .article-navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .article-navbar-links li {
-    font-size: 1.1rem;
-  }
-  
-  .article-navbar-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .article-navbar-links a:hover {
-    color: red;
-  }
-  
-  /* Article Page Content Styling */
-  .article-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-  }
-  
-  .article-title {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .article-introduction {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  /* Misconceptions Styling */
-  .misconception {
-    margin-bottom: 20px;
-  }
-  
-  .misconception h2 {
-    font-size: 1.5em;
-  }
-  
-  .supplements-title {
-    font-size: 2em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .supplements-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .supplement-item {
-    margin-bottom: 10px;
-  }
-  
-  /* Summary Section Styling */
-  .article-summary {
-    margin-top: 30px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-    font-size: 1.2em;
-  }
-  
+  background-color: black;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.article-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.article-logo-text {
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.article-navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.article-navbar-links li {
+  font-size: 1.1rem;
+}
+
+.article-navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.article-navbar-links a:hover {
+  color: red;
+}
+
+/* Article Page Content Styling */
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.article-title {
+  font-size: 2.5rem; /* Larger title */
+  font-weight: 700; /* Bold weight for emphasis */
+  color: #2c3e50; /* Darker color for titles */
+  margin-bottom: 20px; /* Space below title */
+  text-transform: uppercase; /* Uppercase for a strong impact */
+}
+
+.article-introduction {
+  font-size: 1.25rem; /* Larger introduction text */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 20px; /* Space below introduction */
+  font-style: italic; /* Italic style for emphasis */
+}
+
+/* Misconceptions Styling */
+.misconception {
+  margin-bottom: 15px; /* Space between misconceptions */
+  padding: 10px;
+  border: 1px solid #ddd; /* Border around misconceptions */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background for misconceptions */
+}
+
+.misconception h2 {
+  font-size: 1.5rem; /* Larger font for misconception titles */
+  color: #4a90e2; /* Blue color for misconceptions */
+  font-weight: 600; /* Semi-bold weight */
+}
+
+.supplements-title, .guide-title {
+  font-size: 1.75rem; /* Larger section titles */
+  color: #444; /* Darker color for section titles */
+  margin-top: 20px; /* Space above section titles */
+  text-decoration: underline; /* Underline for emphasis */
+}
+
+.supplements-list {
+  list-style-type: disc; /* Bullet points for supplements */
+  padding-left: 20px; /* Indentation for list */
+}
+
+.supplement-item {
+  font-size: 1.1rem; /* Slightly larger font for supplement items */
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Summary Section Styling */
+.article-summary {
+  margin-top: 30px; /* Space above summary */
+  padding: 15px;
+  background-color: #e9ecef; /* Light gray background for summary */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.2em; /* Slightly larger font for summary */
+  font-weight: 500; /* Medium weight for summary text */
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+/* Additional styles for the article container */
+.article-container {
+  padding: 20px;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.supplements-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.guide-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.article-summary {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 1.8rem; /* Section titles */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Darker color for section titles */
+  border-bottom: 2px solid #e74c3c; /* Underline for emphasis */
+  padding-bottom: 5px;
+}
+
+.misconception-item {
+  margin-bottom: 15px; /* Space between misconceptions */
+}
+
+.misconception-title {
+  font-size: 1.5rem; /* Title for each misconception */
+  font-weight: bold;
+  color: #e74c3c; /* Red color for misconceptions */
+}
+
+.misconception-content {
+  font-size: 1rem; /* Regular font size for content */
+  line-height: 1.5; /* Improved line height for readability */
+  color: #333; /* Darker color for content */
+}
+
+.powered-by {
+  text-align: center; /* Center the text */
+  font-size: 1rem; /* Font size for the powered by text */
+  color: #f04e3c; /* Color for branding */
+  opacity: 0.8; /* Slightly transparent for subtlety */
+  margin-top: 20px; /* Space above the text */
+}
