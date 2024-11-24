@@ -2,8 +2,6 @@ import React, { useState } from 'react'; // Import useState from React
 import { Link } from 'react-router-dom';
 import logo from "../assets/chog.gif";
 import { navLinks } from '../Data/Data';
-import { FiMenu } from "react-icons/fi";
-import { IoClose } from "react-icons/io5";
 
 const Nav = ({ nav }) => {
   const [openNav, setOpenNav] = useState(false);
@@ -20,7 +18,7 @@ const Nav = ({ nav }) => {
         {/* Links */}
         <ul className='flex flex-1 justify-end gap-10 max-xl:gap-7 max-lg:flex-col max-lg:bg-stone-700 max-lg:text-white max-lg:pt-10 max-lg:pb-3 max-lg:px-4 max-lg:gap-4 max-lg:absolute max-lg:top-24 max-lg:left-[5%] max-lg:w-[90%] max-lg:z-20 max-sm:top-20'>
           {navLinks.map((val) => (
-            <li key={val.label} className={`text-white font-medium hover:text-red-500 text-xl max-lg:text-lg ${openNav ? "max-lg:block" : "max-lg:hidden"}`}>
+            <li key={val.label} className={`text-white font-medium hover:text-red-500 text-xl max-lg:text-lg`}>
               {val.label === "Article" ? (
                 <Link to="/article">{val.label}</Link>
               ) : (
@@ -28,11 +26,6 @@ const Nav = ({ nav }) => {
               )}
             </li>
           ))}
-
-          {/* Mobile Menu Toggle */}
-          <div className={`absolute right-[20px] translate-y-[-50%] text-2xl cursor-pointer ${openNav ? 'top-[25px] right-[20px] translate-y-[-50%]' : 'top-[25px]'}`} onClick={() => setOpenNav(!openNav)}>
-            {openNav ? <IoClose /> : <FiMenu />}
-          </div>
         </ul>
       </nav>
     </header>
